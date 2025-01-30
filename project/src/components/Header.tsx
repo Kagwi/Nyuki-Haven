@@ -1,0 +1,63 @@
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Bug, Menu, X } from 'lucide-react';
+
+export default function Header() {
+  const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const isActive = (path: string) => location.pathname === path;
+  
+  return (
+    <header className="bg-purple-900 text-white py-4 px-6 shadow-lg">
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
+        <div className="flex items-center justify-between w-full md:w-auto">
+          <div className="flex items-center group">
+            <Bug className="h-8 w-8 text-yellow-400 mr-2 group-hover:rotate-12 transition-transform" />
+            <div>
+              <h1 className="text-2xl font-bold group-hover:text-yellow-400 transition-colors">Nyuki Haven</h1>
+              <p className="text-sm text-yellow-400 group-hover:text-white transition-colors">Nurturing Bees. Sustaining Life</p>
+            </div>
+          </div>
+          <button 
+            className="md:hidden"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+        <nav className={`${isMenuOpen ? 'block' : 'hidden'} md:block w-full md:w-auto mt-4 md:mt-0`}>
+          <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6">
+            <li>
+              <Link 
+                to="/" 
+                className={`block py-2 md:py-0 hover:text-yellow-400 transition-colors ${isActive('/') ? 'text-yellow-400' : ''}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/about" 
+                className={`block py-2 md:py-0 hover:text-yellow-400 transition-colors ${isActive('/about') ? 'text-yellow-400' : ''}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About Us
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/contact" 
+                className={`block py-2 md:py-0 hover:text-yellow-400 transition-colors ${isActive('/contact') ? 'text-yellow-400' : ''}`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
+}
