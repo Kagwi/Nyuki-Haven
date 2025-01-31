@@ -29,9 +29,9 @@ export default function Contact() {
 
   return (
     <div 
-      className="min-h-screen py-16 px-6 bg-[url('https://images.unsplash.com/photo-1587041882276-2a5b704d2ba4')] bg-cover bg-center bg-fixed"
+      className="min-h-screen py-16 px-6 bg-[url('https://github.com/Kagwi/Nyuki-Haven/blob/main/Bee-Apiary.jpg?raw=true')] bg-cover bg-center bg-fixed"
       style={{
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(https://images.unsplash.com/photo-1587041882276-2a5b704d2ba4)'
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(https://github.com/Kagwi/Nyuki-Haven/blob/main/Bee-Apiary.jpg?raw=true)'
       }}
     >
       <div className="container mx-auto max-w-4xl">
