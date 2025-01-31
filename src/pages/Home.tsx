@@ -6,17 +6,20 @@ const features = [
   {
     icon: <Award className="h-8 w-8 text-yellow-400" />,
     title: "Premium Quality",
-    description: "Our honey is harvested with care to maintain its pure, natural qualities"
+    description: "Our honey is harvested with care to maintain its pure, natural qualities",
+    image: "https://images.unsplash.com/photo-1607342283552-0ba28b724d6a?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fG1vbmV5fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
   },
   {
     icon: <Shield className="h-8 w-8 text-yellow-400" />,
     title: "100% Pure",
-    description: "Unprocessed, raw honey direct from our sustainable apiaries"
+    description: "Unprocessed, raw honey direct from our sustainable apiaries",
+    image: "https://images.unsplash.com/photo-1576710262672-51be767b48a5?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDN8fHB1cmVoaoneyfGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
   },
   {
     icon: <Leaf className="h-8 w-8 text-yellow-400" />,
     title: "Eco-Friendly",
-    description: "Supporting bee populations and environmental sustainability"
+    description: "Supporting bee populations and environmental sustainability",
+    image: "https://images.unsplash.com/photo-1607410863892-7a5b1979debb?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fGVjb2ZyaWVofGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
   }
 ];
 
@@ -25,21 +28,25 @@ const impacts = [
     icon: <TreeDeciduous className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Environmental Impact",
     stats: "1000+ Acres",
-    description: "Protected pollinator habitat created and maintained across the country"
+    description: "Protected pollinator habitat created and maintained across the country",
+    image: "https://images.unsplash.com/photo-1598158870532-d16cc51b4db8?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fG9yaWdoLWhhYml0YXR8ZW58MHx8fHwxNjc2NTMzMjA3&ixlib=rb-1.2.1&q=80&w=400",
   },
   {
     icon: <Heart className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Community Support",
     stats: "50+ Communities",
-    description: "Local farming communities supported through sustainable beekeeping practices"
+    description: "Local farming communities supported through sustainable beekeeping practices",
+    image: "https://images.unsplash.com/photo-1550231792-bff066fe772b?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fGJvcm5lYWh9ZW58MHx8fHwxNjc2NTMzMjA3&ixlib=rb-1.2.1&q=80&w=400",
   },
   {
     icon: <Globe2 className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Global Contribution",
     stats: "25% Reduction",
-    description: "In carbon footprint through sustainable farming practices"
+    description: "In carbon footprint through sustainable farming practices",
+    image: "https://images.unsplash.com/photo-1607304002149-847de190c315?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDkwfHx3b3JsZCUyMHdvcmt8ZW58MHx8fHwxNjc2NTMzMjA3&ixlib=rb-1.2.1&q=80&w=400",
   }
 ];
+
 
 export default function Home() {
   return (
