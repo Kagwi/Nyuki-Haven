@@ -115,27 +115,36 @@ export default function About() {
       <section className="py-16">
         <div className="container mx-auto max-w-7xl">
           <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Benefits of Honey</h3>
-          <div className="max-w-2xl mx-auto space-y-4">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="bg-yellow-50 rounded-lg overflow-hidden cursor-pointer"
-                onClick={() => setExpandedBenefit(expandedBenefit === index ? null : index)}
-              >
-                <div className="p-4 flex items-center justify-between">
-                  <div className="flex items-center">
-                    <Star className="text-yellow-400 mr-3 h-5 w-5" />
-                    <h4 className="font-semibold">{benefit.title}</h4>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-1/3">
+              <img
+                src="https://images.unsplash.com/photo-1587041882276-2a5b704d2ba4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Honey benefits"
+                className="w-full h-auto object-cover rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="md:w-2/3 max-w-none">
+              {benefits.map((benefit, index) => (
+                <div
+                  key={index}
+                  className="bg-yellow-50 rounded-lg overflow-hidden cursor-pointer mb-4"
+                  onClick={() => setExpandedBenefit(expandedBenefit === index ? null : index)}
+                >
+                  <div className="p-4 flex items-center justify-between">
+                    <div className="flex items-center">
+                      <Star className="text-yellow-400 mr-3 h-5 w-5" />
+                      <h4 className="font-semibold">{benefit.title}</h4>
+                    </div>
+                    <Info className={`h-5 w-5 transform transition-transform ${expandedBenefit === index ? 'rotate-180' : ''}`} />
                   </div>
-                  <Info className={`h-5 w-5 transform transition-transform ${expandedBenefit === index ? 'rotate-180' : ''}`} />
+                  {expandedBenefit === index && (
+                    <div className="px-4 pb-4 text-gray-600">
+                      {benefit.details}
+                    </div>
+                  )}
                 </div>
-                {expandedBenefit === index && (
-                  <div className="px-4 pb-4 text-gray-600">
-                    {benefit.details}
-                  </div>
-                )}
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
