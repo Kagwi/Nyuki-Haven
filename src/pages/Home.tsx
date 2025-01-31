@@ -25,13 +25,13 @@ const impacts = [
   {
     icon: <TreeDeciduous className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Environmental Impact",
-    stats: "1000+ Acres",
+    stats: "100+ Acres",
     description: "Protected pollinator habitat created and maintained across the country"
   },
   {
     icon: <Heart className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Community Support",
-    stats: "50+ Communities",
+    stats: "30+ Communities",
     description: "Local farming communities supported through sustainable beekeeping practices"
   },
   {
