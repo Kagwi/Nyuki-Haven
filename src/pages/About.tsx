@@ -52,12 +52,14 @@ export default function About() {
                 At Nyuki Haven, we are passionate about producing the highest quality honey while fostering a sustainable environment for bees. 
                 Our honey is harvested with care, ensuring every jar is filled with pure, unprocessed goodness straight from the hive.
               </p>
+              <h3 className="text-3xl font-bold text-purple-900 mb-8 text-center">Our Mission</h3>
               <p className="mb-4">
-                Our mission is to not only provide delicious, natural honey but also to educate and inspire communities about the vital role bees play in our ecosystem.
+                Nyuki Haven's mission is to not only provide delicious, natural honey but also to educate and inspire communities about the vital role bees play in our ecosystem.
                 By choosing Nyuki Haven, you're supporting ethical beekeeping practices and helping to preserve these essential pollinators for future generations.
               </p>
+              <h3 className="text-3xl font-bold text-purple-900 mb-8 text-center">Our Vision</h3>
               <p>
-                Our vision is to be a global leader in sustainable honey production, pioneering eco-friendly methods and spreading awareness about the importance of bee conservation.
+                We aim to be a global leader in sustainable honey production, pioneering eco-friendly methods and spreading awareness about the importance of bee conservation.
               </p>
             </div>
             <div className="relative w-full h-auto flex justify-center">
