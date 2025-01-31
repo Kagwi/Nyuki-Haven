@@ -47,7 +47,7 @@ export default function Home() {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80")',
+          backgroundImage: 'url("https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Jar%20Background.jpg?raw=true&auto=format&fit=crop&w=2000&q=80")',
           backgroundBlendMode: 'overlay',
           backgroundColor: 'rgba(0, 0, 0, 0.5)'
         }}
