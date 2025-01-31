@@ -60,7 +60,7 @@ export default function About() {
           {/* Right side image */}
           <div className="hidden md:block">
             <img
-              src="https://images.unsplash.com/photo-1578522299611-16c8e5d6cb7f?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fGJlZXxlbnwwfDB8fHx8&ixlib=rb-1.2.1&q=80&w=500"
+              src="https://raw.githubusercontent.com/Kagwi/Nyuki-Haven/refs/heads/main/Honey%20Image.avif&q=80&w=500"
               alt="Honey Harvest"
               className="w-full h-auto object-cover rounded-lg"
             />
