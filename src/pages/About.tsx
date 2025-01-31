@@ -19,7 +19,7 @@ const products = [
     size: '2',
     price: '45',
     description: 'Great value for honey lovers',
-    image: 'https://images.unsplash.com/photo-1601657672500-c51e8dd4f414?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: 'https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Image.jpg?raw=true&auto=format&fit=crop&w=800&q=80'
   },
   {
     size: '5',
@@ -60,7 +60,7 @@ export default function About() {
           {/* Right side image */}
           <div className="hidden md:block">
             <img
-              src="https://raw.githubusercontent.com/Kagwi/Nyuki-Haven/refs/heads/main/Honey%20Image.avif"
+              src="https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Image.jpg?raw=true&auto=format&fit=crop&w=800&q=80"
               alt="Honey Harvest"
               className="w-full h-auto object-cover rounded-lg"
             />
