@@ -7,7 +7,7 @@ const features = [
     icon: <Award className="h-8 w-8 text-yellow-400" />,
     title: "Premium Quality",
     description: "Our honey is harvested with care to maintain its pure, natural qualities",
-    image: "https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Jar%20Background.jpg?raw=true&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fG1vbmV5fGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
+    image: "https://raw.githubusercontent.com/Kagwi/Nyuki-Haven/main/Honey%20Jar%20Background.jpg",
   },
   {
     icon: <Shield className="h-8 w-8 text-yellow-400" />,
@@ -22,6 +22,7 @@ const features = [
     image: "https://images.unsplash.com/photo-1607410863892-7a5b1979debb?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fGVjb2ZyaWVofGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
   }
 ];
+
 
 const impacts = [
   {
