@@ -7,19 +7,16 @@ const features = [
     icon: <Award className="h-8 w-8 text-yellow-400" />,
     title: "Premium Quality",
     description: "Our honey is harvested with care to maintain its pure, natural qualities",
-    image: "https://raw.githubusercontent.com/Kagwi/Nyuki-Haven/main/Honey%20Jar%20Background.jpg",
   },
   {
     icon: <Shield className="h-8 w-8 text-yellow-400" />,
     title: "100% Pure",
     description: "Unprocessed, raw honey direct from our sustainable apiaries",
-    image: "https://media.istockphoto.com/id/2161304146/photo/natural-organic-honey-in-glass-jar-honey-dipper-and-honeycombs-are-near-natural-food.webp?a=1&b=1&s=612x612&w=0&k=20&c=8i8HlLRsrgKhoc7Nx63pXNbKzpV6EtdDz8ZPLAYb_5c=&q=80&w=400",
   },
   {
     icon: <Leaf className="h-8 w-8 text-yellow-400" />,
     title: "Eco-Friendly",
     description: "Supporting bee populations and environmental sustainability",
-    image: "https://images.unsplash.com/photo-1607410863892-7a5b1979debb?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fGVjb2ZyaWVofGVufDB8fHx8&ixlib=rb-1.2.1&q=80&w=400",
   }
 ];
 
