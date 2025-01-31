@@ -44,89 +44,28 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <section className="py-16 px-6">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          {/* Left: Text Content */}
-          <div className="text-gray-700 bg-yellow-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">About Nyuki Haven</h2>
-            <p className="mb-4">
-              Nyuki Haven is dedicated to producing the finest quality honey while promoting sustainable beekeeping practices.
-              Our mission is to provide pure, natural honey while protecting and nurturing bee populations.
-            </p>
-            <p>
-              Our vision is to become a leading force in sustainable honey production while educating communities about the
-              importance of bees in our ecosystem.
-            </p>
-          </div>
-
-          {/* Right: Responsive Image */}
-          <div className="w-full h-full flex justify-center items-center">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">About Nyuki Haven</h2>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="text-gray-700 bg-yellow-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+              <p className="mb-4">
+                Nyuki Haven is a pioneering enterprise dedicated to producing the finest quality honey while championing sustainable beekeeping practices. Nestled in the lush, biodiverse regions of East Africa, our apiaries are carefully situated in pristine environments where bees thrive on native flora, ensuring the purity and rich flavor of our honey. Founded in 2015 by a team of ecologists and local beekeepers, Nyuki Haven emerged from a shared passion for environmental stewardship and a commitment to safeguarding the irreplaceable role of bees in our global ecosystem.
+              </p>
+              <h3 className="text-xl font-bold text-purple-900">Our Mission</h3>
+              <p>
+                At Nyuki Haven, our mission is twofold: to deliver pure, natural honey straight from the hive to your table, and to protect and nurture bee populations through innovative, eco-conscious practices. We prioritize the health of our bees by maintaining chemical-free environments, avoiding synthetic pesticides, and practicing ethical hive management. By partnering with local communities, we empower small-scale beekeepers with training and resources to adopt sustainable methods, ensuring both ecological and economic resilience.
+              </p>
+              <h3 className="text-xl font-bold text-purple-900 mt-4">Our Vision</h3>
+              <p>
+                We envision a world where honey production harmonizes with nature, rather than exploiting it. Nyuki Haven aims to become a global leader in sustainable apiculture, setting industry standards for ethical practices and transparency. Beyond production, we strive to ignite a movement—educating communities, schools, and policymakers about the critical importance of bees as pollinators and their impact on food security, biodiversity, and climate stability.
+              </p>
+            </div>
             <img
               src="https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Image.jpg?raw=true&auto=format&fit=crop&w=400&q=80"
               alt="Honey Harvest"
-              className="w-full h-full max-h-[400px] object-cover rounded-lg"
+              className="w-full max-h-[400px] object-cover rounded-lg"
             />
           </div>
-        </div>
-
-        {/* Products Section */}
-        <h3 className="text-2xl font-bold text-purple-900 mt-16 mb-6 text-center">Our Products</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {products.map((product) => (
-            <div 
-              key={product.size}
-              className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300"
-              onMouseEnter={() => setSelectedProduct(product)}
-              onMouseLeave={() => setSelectedProduct(null)}
-            >
-              <div className="relative h-48">
-                <img 
-                  src={product.image} 
-                  alt={`${product.size}kg honey jar`}
-                  className="w-full h-full object-cover"
-                />
-                {selectedProduct === product && (
-                  <div className="absolute inset-0 bg-purple-900 bg-opacity-75 flex items-center justify-center text-white p-4 text-center">
-                    <p>{product.description}</p>
-                  </div>
-                )}
-              </div>
-              <div className="p-6">
-                <h4 className="text-xl font-bold text-purple-900 mb-2">{product.size}kg Jar</h4>
-                <p className="text-yellow-600 font-bold mb-4">${product.price}</p>
-                <Link
-                  to="/contact"
-                  className="bg-purple-900 text-white px-4 py-2 rounded hover:bg-purple-800 transition-colors inline-block w-full text-center"
-                >
-                  Order Now
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Benefits Section */}
-        <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Benefits of Honey</h3>
-        <div className="max-w-2xl mx-auto space-y-4">
-          {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="bg-yellow-50 rounded-lg overflow-hidden cursor-pointer"
-              onClick={() => setExpandedBenefit(expandedBenefit === index ? null : index)}
-            >
-              <div className="p-4 flex items-center justify-between">
-                <div className="flex items-center">
-                  <Star className="text-yellow-400 mr-3 h-5 w-5" />
-                  <h4 className="font-semibold">{benefit.title}</h4>
-                </div>
-                <Info className={`h-5 w-5 transform transition-transform ${expandedBenefit === index ? 'rotate-180' : ''}`} />
-              </div>
-              {expandedBenefit === index && (
-                <div className="px-4 pb-4 text-gray-600">
-                  {benefit.details}
-                </div>
-              )}
-            </div>
-          ))}
         </div>
       </section>
     </div>
