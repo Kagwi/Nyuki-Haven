@@ -28,25 +28,21 @@ const impacts = [
     icon: <TreeDeciduous className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Environmental Impact",
     stats: "1000+ Acres",
-    description: "Protected pollinator habitat created and maintained across the country",
-    image: "https://images.unsplash.com/photo-1598158870532-d16cc51b4db8?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fG9yaWdoLWhhYml0YXR8ZW58MHx8fHwxNjc2NTMzMjA3&ixlib=rb-1.2.1&q=80&w=400",
+    description: "Protected pollinator habitat created and maintained across the country"
   },
   {
     icon: <Heart className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Community Support",
     stats: "50+ Communities",
-    description: "Local farming communities supported through sustainable beekeeping practices",
-    image: "https://images.unsplash.com/photo-1550231792-bff066fe772b?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDJ8fGJvcm5lYWh9ZW58MHx8fHwxNjc2NTMzMjA3&ixlib=rb-1.2.1&q=80&w=400",
+    description: "Local farming communities supported through sustainable beekeeping practices"
   },
   {
     icon: <Globe2 className="h-12 w-12 text-yellow-400 group-hover:scale-110 transition-transform" />,
     title: "Global Contribution",
     stats: "25% Reduction",
-    description: "In carbon footprint through sustainable farming practices",
-    image: "https://images.unsplash.com/photo-1607304002149-847de190c315?crop=entropy&cs=tinysrgb&fit=max&ixid=MXwyMDg1MnwwfDF8c2VhcmNofDkwfHx3b3JsZCUyMHdvcmt8ZW58MHx8fHwxNjc2NTMzMjA3&ixlib=rb-1.2.1&q=80&w=400",
+    description: "In carbon footprint through sustainable farming practices"
   }
 ];
-
 
 export default function Home() {
   return (
