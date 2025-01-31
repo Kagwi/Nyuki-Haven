@@ -44,15 +44,9 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <section className="py-16 px-6">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="w-full md:w-1/2">
-            <img
-              src="https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Image.jpg?raw=true&auto=format&fit=crop&w=400&q=80"
-              alt="Honey Harvest"
-              className="w-full h-auto object-cover rounded-lg"
-            />
-          </div>
-          <div className="max-w-3xl mx-auto text-gray-700 bg-yellow-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+          {/* Left: Text Content */}
+          <div className="text-gray-700 bg-yellow-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
             <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">About Nyuki Haven</h2>
             <p className="mb-4">
               Nyuki Haven is dedicated to producing the finest quality honey while promoting sustainable beekeeping practices.
@@ -60,18 +54,22 @@ export default function About() {
             </p>
             <p>
               Our vision is to become a leading force in sustainable honey production while educating communities about the
-              importance of bees in our ecosystem. We work closely with local beekeepers, ensuring ethical practices that
-              preserve biodiversity and promote the well-being of both bees and humans.
+              importance of bees in our ecosystem.
             </p>
-            <p className="mt-4">
-              We believe in sustainability, purity, and transparency. Our honey is unprocessed, retaining all its natural
-              enzymes, vitamins, and minerals. By choosing Nyuki Haven, you support ethical honey production that makes
-              a positive impact on the environment and your well-being.
-            </p>
+          </div>
+
+          {/* Right: Responsive Image */}
+          <div className="w-full h-full flex justify-center items-center">
+            <img
+              src="https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Image.jpg?raw=true&auto=format&fit=crop&w=400&q=80"
+              alt="Honey Harvest"
+              className="w-full h-full max-h-[400px] object-cover rounded-lg"
+            />
           </div>
         </div>
 
-        <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Our Products</h3>
+        {/* Products Section */}
+        <h3 className="text-2xl font-bold text-purple-900 mt-16 mb-6 text-center">Our Products</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {products.map((product) => (
             <div 
@@ -106,6 +104,7 @@ export default function About() {
           ))}
         </div>
 
+        {/* Benefits Section */}
         <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Benefits of Honey</h3>
         <div className="max-w-2xl mx-auto space-y-4">
           {benefits.map((benefit, index) => (
