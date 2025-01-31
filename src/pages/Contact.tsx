@@ -28,13 +28,20 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-white py-16 px-6">
+    <div 
+      className="min-h-screen py-16 px-6 bg-[url('https://images.unsplash.com/photo-1587041882276-2a5b704d2ba4')] bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(https://images.unsplash.com/photo-1587041882276-2a5b704d2ba4)'
+      }}
+    >
       <div className="container mx-auto max-w-4xl">
-        <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center animate-fade-in">Get in Touch</h2>
+        <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center animate-fade-in">
+          Get in Touch
+        </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <div className="bg-yellow-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-yellow-50/90 backdrop-blur-sm p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-purple-900 mb-6">Contact Information</h3>
               
               <div className="space-y-6">
@@ -79,7 +86,10 @@ export default function Contact() {
           </div>
 
           <div>
-            <form onSubmit={handleSubmit} className="space-y-6 bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            <form 
+              onSubmit={handleSubmit} 
+              className="space-y-6 bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+            >
               <div>
                 <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
                 <input
