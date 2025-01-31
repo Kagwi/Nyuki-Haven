@@ -118,7 +118,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3">
               <img
-                src="https://images.unsplash.com/photo-1587041882276-2a5b704d2ba4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                src="https://github.com/Kagwi/Nyuki-Haven/blob/main/honeyimg.jpg?raw=true&auto=format&fit=crop&w=800&q=80"
                 alt="Honey benefits"
                 className="w-full h-auto object-cover rounded-lg shadow-lg"
               />
