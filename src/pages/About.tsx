@@ -42,12 +42,12 @@ export default function About() {
   const [expandedBenefit, setExpandedBenefit] = useState(null);
 
   return (
-    <div className="min-h-screen bg-white">
-      <section className="py-16 px-6">
-        <div className="container mx-auto">
+    <div className="min-h-screen bg-white px-4 md:px-8 lg:px-16">
+      <section className="py-16">
+        <div className="container mx-auto max-w-7xl">
           <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">About Nyuki Haven</h2>
-          <div className="flex flex-col md:flex-row items-center bg-yellow-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-            <div className="md:w-1/2 text-gray-700">
+          <div className="flex flex-col md:flex-row items-center bg-yellow-50 p-6 md:p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="md:w-1/2 text-gray-700 text-sm md:text-base">
               <p className="mb-4">
                 At Nyuki Haven, we are passionate about producing the highest quality honey while fostering a sustainable environment for bees. 
                 Our honey is harvested with care, ensuring every jar is filled with pure, unprocessed goodness straight from the hive.
