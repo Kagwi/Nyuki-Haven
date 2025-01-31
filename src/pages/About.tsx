@@ -45,6 +45,54 @@ export default function About() {
     <div className="min-h-screen bg-white px-4 md:px-8 lg:px-16">
       <section className="py-16">
         <div className="container mx-auto max-w-7xl">
+          <h2 className="text-3xl font-bold text-purple-900 mb-8 text-center">About Nyuki Haven</h2>
+          <p className="text-center text-gray-700 mb-8">
+            At Nyuki Haven, we are passionate about producing the highest quality honey while fostering a sustainable environment for bees.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="container mx-auto max-w-7xl">
+          <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Our Products</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+            {products.map((product) => (
+              <div 
+                key={product.size}
+                className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300"
+                onMouseEnter={() => setSelectedProduct(product)}
+                onMouseLeave={() => setSelectedProduct(null)}
+              >
+                <div className="relative h-48">
+                  <img 
+                    src={product.image} 
+                    alt={`${product.size}kg honey jar`}
+                    className="w-full h-full object-cover"
+                  />
+                  {selectedProduct === product && (
+                    <div className="absolute inset-0 bg-purple-900 bg-opacity-75 flex items-center justify-center text-white p-4 text-center">
+                      <p>{product.description}</p>
+                    </div>
+                  )}
+                </div>
+                <div className="p-6">
+                  <h4 className="text-xl font-bold text-purple-900 mb-2">{product.size}kg Jar</h4>
+                  <p className="text-yellow-600 font-bold mb-4">${product.price}</p>
+                  <Link
+                    to="/contact"
+                    className="bg-purple-900 text-white px-4 py-2 rounded hover:bg-purple-800 transition-colors inline-block w-full text-center"
+                  >
+                    Order Now
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="container mx-auto max-w-7xl">
           <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Benefits of Honey</h3>
           <div className="max-w-2xl mx-auto space-y-4 flex flex-col md:flex-row items-center">
             <img 
