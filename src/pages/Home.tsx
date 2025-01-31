@@ -48,7 +48,7 @@ export default function Home() {
       <section 
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: 'url("https://github.com/Kagwi/Nyuki-Haven/blob/main/beekeeping-honey-harvest.jpg?raw=true")',
+          backgroundImage: 'url("https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Jar%20Background.jpg?raw=true")',
           backgroundBlendMode: 'overlay',
           backgroundColor: 'rgba(0, 0, 0, 0.5)'
         }}
