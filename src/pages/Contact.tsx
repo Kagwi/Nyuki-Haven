@@ -29,9 +29,9 @@ export default function Contact() {
 
   return (
     <div 
-      className="min-h-screen py-16 px-6 bg-[url('https://github.com/Kagwi/Nyuki-Haven/blob/main/Bee-Apiary.jpg?raw=true')] bg-cover bg-center bg-fixed"
+      className="min-h-screen py-16 px-6 bg-cover bg-center bg-fixed"
       style={{
-        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(https://github.com/Kagwi/Nyuki-Haven/blob/main/Bee-Apiary.jpg?raw=true)'
+        backgroundImage: 'linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(https://github.com/Kagwi/Nyuki-Haven/blob/main/Bee-Apiary.jpg?raw=true)'
       }}
     >
       <div className="container mx-auto max-w-4xl">
@@ -41,7 +41,7 @@ export default function Contact() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-8">
-            <div className="bg-yellow-50/90 backdrop-blur-sm p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+            <div className="bg-yellow-50/70 backdrop-blur-sm p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-purple-900 mb-6">Contact Information</h3>
               
               <div className="space-y-6">
@@ -88,7 +88,7 @@ export default function Contact() {
           <div>
             <form 
               onSubmit={handleSubmit} 
-              className="space-y-6 bg-white/90 backdrop-blur-sm p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="space-y-6 bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div>
                 <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
