@@ -49,12 +49,15 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center bg-yellow-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
             <div className="md:w-1/2 text-gray-700">
               <p className="mb-4">
-                Nyuki Haven is dedicated to producing the finest quality honey while promoting sustainable beekeeping practices.
-                Our mission is to provide pure, natural honey while protecting and nurturing bee populations.
+                At Nyuki Haven, we are passionate about producing the highest quality honey while fostering a sustainable environment for bees. 
+                Our honey is harvested with care, ensuring every jar is filled with pure, unprocessed goodness straight from the hive.
+              </p>
+              <p className="mb-4">
+                Our mission is to not only provide delicious, natural honey but also to educate and inspire communities about the vital role bees play in our ecosystem.
+                By choosing Nyuki Haven, you're supporting ethical beekeeping practices and helping to preserve these essential pollinators for future generations.
               </p>
               <p>
-                Our vision is to become a leading force in sustainable honey production while educating communities about the
-                importance of bees in our ecosystem.
+                Our vision is to be a global leader in sustainable honey production, pioneering eco-friendly methods and spreading awareness about the importance of bee conservation.
               </p>
             </div>
             <div className="md:w-1/2 mt-6 md:mt-0">
@@ -64,65 +67,6 @@ export default function About() {
                 className="w-full h-auto object-cover rounded-lg"
               />
             </div>
-          </div>
-
-          <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Our Products</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-            {products.map((product) => (
-              <div 
-                key={product.size}
-                className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-1 transition-all duration-300"
-                onMouseEnter={() => setSelectedProduct(product)}
-                onMouseLeave={() => setSelectedProduct(null)}
-              >
-                <div className="relative h-48">
-                  <img 
-                    src={product.image} 
-                    alt={`${product.size}kg honey jar`}
-                    className="w-full h-full object-cover"
-                  />
-                  {selectedProduct === product && (
-                    <div className="absolute inset-0 bg-purple-900 bg-opacity-75 flex items-center justify-center text-white p-4 text-center">
-                      <p>{product.description}</p>
-                    </div>
-                  )}
-                </div>
-                <div className="p-6">
-                  <h4 className="text-xl font-bold text-purple-900 mb-2">{product.size}kg Jar</h4>
-                  <p className="text-yellow-600 font-bold mb-4">${product.price}</p>
-                  <Link
-                    to="/contact"
-                    className="bg-purple-900 text-white px-4 py-2 rounded hover:bg-purple-800 transition-colors inline-block w-full text-center"
-                  >
-                    Order Now
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Benefits of Honey</h3>
-          <div className="max-w-2xl mx-auto space-y-4">
-            {benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="bg-yellow-50 rounded-lg overflow-hidden cursor-pointer"
-                onClick={() => setExpandedBenefit(expandedBenefit === index ? null : index)}
-              >
-                <div className="p-4 flex items-center justify-between">
-                  <div className="flex items-center">
-                    <Star className="text-yellow-400 mr-3 h-5 w-5" />
-                    <h4 className="font-semibold">{benefit.title}</h4>
-                  </div>
-                  <Info className={`h-5 w-5 transform transition-transform ${expandedBenefit === index ? 'rotate-180' : ''}`} />
-                </div>
-                {expandedBenefit === index && (
-                  <div className="px-4 pb-4 text-gray-600">
-                    {benefit.details}
-                  </div>
-                )}
-              </div>
-            ))}
           </div>
         </div>
       </section>
