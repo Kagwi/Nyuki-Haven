@@ -62,8 +62,8 @@ export default function About() {
             </div>
             <div className="relative w-full h-auto flex justify-center">
               <img
-                src="https://images.unsplash.com/photo-1595436065982-84f2640fd043?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
-                alt="Honey Harvest"
+                src="https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Image.jpg?raw=true&auto=format&fit=crop&w=600&q=80"
+                alt="Honey Jar"
                 className="w-full h-auto object-cover rounded-lg"
               />
             </div>
