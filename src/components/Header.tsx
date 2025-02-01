@@ -1,19 +1,23 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Bug, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path) => location.pathname === path;
   
   return (
     <header className="bg-purple-900 text-white py-4 px-6 shadow-lg">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center group">
-            <Bug className="h-8 w-8 text-yellow-400 mr-2 group-hover:rotate-12 transition-transform" />
+            <img 
+              src="/path-to-your-logo.png" 
+              alt="Nyuki Haven Logo" 
+              className="h-8 w-8 mr-2 group-hover:rotate-12 transition-transform"
+            />
             <div>
               <h1 className="text-2xl font-bold group-hover:text-yellow-400 transition-colors">Nyuki Haven</h1>
               <p className="text-sm text-yellow-400 group-hover:text-white transition-colors">Nurturing Bees. Sustaining Life</p>
