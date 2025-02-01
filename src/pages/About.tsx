@@ -54,12 +54,12 @@ export default function About() {
               </p>
               <h3 className="text-3xl font-bold text-purple-900 mb-8 text-center">Our Mission</h3>
               <p className="mb-4">
-                Nyuki Haven's mission is to not only provide delicious, natural honey but also to educate and inspire communities about the vital role bees play in our ecosystem.
-                By choosing Nyuki Haven, you're supporting ethical beekeeping practices and helping to preserve these essential pollinators for future generations.
+                Our company mission is to not only provide delicious, natural honey but also to educate and inspire communities about the vital role bees play in our ecosystem.
               </p>
               <h3 className="text-3xl font-bold text-purple-900 mb-8 text-center">Our Vision</h3>
               <p>
                 We aim to be a global leader in sustainable honey production, pioneering eco-friendly methods and spreading awareness about the importance of bee conservation.
+                By choosing Nyuki Haven, you're supporting ethical beekeeping practices and helping to preserve these essential pollinators for future generations.
               </p>
             </div>
             <div className="relative w-full h-auto flex justify-center">
