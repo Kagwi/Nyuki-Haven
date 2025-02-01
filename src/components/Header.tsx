@@ -15,7 +15,7 @@ export default function Header() {
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center group">
             <img 
-              src={logo} 
+              src="https://github.com/Kagwi/Nyuki-Haven/blob/main/Nyuki_Haven_Logo.png?raw=true" 
               alt="Nyuki Haven Logo" 
               className="h-20 w-20 md:h-24 md:w-24 mr-4 group-hover:rotate-12 transition-transform object-contain"
             />
