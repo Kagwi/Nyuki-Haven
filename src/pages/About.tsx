@@ -54,7 +54,7 @@ export default function About() {
               </p>
               <h3 className="text-3xl font-bold text-purple-900 mb-8 text-center">Our Mission</h3>
               <p className="mb-4">
-                Our company mission is to not only provide delicious, natural honey but also to educate and inspire communities about the vital role bees play in our ecosystem.
+                Our company's mission is to not only provide delicious, natural honey but also to educate and inspire communities about the vital role bees play in our ecosystem.
               </p>
               <h3 className="text-3xl font-bold text-purple-900 mb-8 text-center">Our Vision</h3>
               <p>
