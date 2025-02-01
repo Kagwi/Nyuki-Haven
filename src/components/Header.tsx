@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export default function Header() {
   const location = useLocation();
@@ -14,9 +15,9 @@ export default function Header() {
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center group">
             <img 
-              src="/path-to-your-logo.png" 
+              src={logo} 
               alt="Nyuki Haven Logo" 
-              className="h-16 w-16 md:h-20 md:w-20 mr-4 group-hover:rotate-12 transition-transform"
+              className="h-20 w-20 md:h-24 md:w-24 mr-4 group-hover:rotate-12 transition-transform object-contain"
             />
             <div>
               <Link to="/" className="text-3xl font-bold group-hover:text-yellow-400 transition-colors">Nyuki Haven</Link>
