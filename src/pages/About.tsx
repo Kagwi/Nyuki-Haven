@@ -60,7 +60,7 @@ export default function About() {
               <p>
                 We aim to be a global leader in sustainable honey production, pioneering eco-friendly methods and spreading awareness about the importance of bee conservation.
               </p>
-              <p>
+              <p className="mb-4">
                 By choosing Nyuki Haven, you're supporting ethical beekeeping practices and helping to preserve these essential pollinators for future generations.
               </p>
             </div>
