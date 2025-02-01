@@ -1,16 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import logo from '../assets/logo.png';
 
 export default function Header() {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const isActive = (path) => location.pathname === path;
   
   return (
-    <header className="bg-purple-900 text-white py-4 px-6 shadow-lg">
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-purple-800 shadow-md' : 'bg-purple-900'} text-white py-4 px-6`}>
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center group">
@@ -25,7 +33,7 @@ export default function Header() {
             </div>
           </div>
           <button 
-            className="md:hidden"
+            className="md:hidden p-2 bg-yellow-400 text-purple-900 rounded-full hover:bg-yellow-500 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
