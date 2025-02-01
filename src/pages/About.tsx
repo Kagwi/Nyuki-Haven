@@ -7,25 +7,25 @@ const products = [
     size: '0.5',
     price: '15',
     description: 'Perfect for individual use',
-    image: 'https://images.unsplash.com/photo-1587049633312-d628ae50a8ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: 'https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Jar%20250g.PNG?raw=true&auto=format&fit=crop&w=800&q=80'
   },
   {
     size: '1',
     price: '25',
     description: 'Most popular family size',
-    image: 'https://images.unsplash.com/photo-1558583055-d7ac00b1adca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: 'https://github.com/Kagwi/Nyuki-Haven/blob/main/250g.PNG?raw=true&auto=format&fit=crop&w=800&q=80'
   },
   {
     size: '2',
     price: '45',
     description: 'Great value for honey lovers',
-    image: 'https://images.unsplash.com/photo-1601657672500-c51e8dd4f414?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: 'https://github.com/Kagwi/Nyuki-Haven/blob/main/Honey%20Jar%201Kg.PNG?raw=true&auto=format&fit=crop&w=800&q=80'
   },
   {
     size: '5',
     price: '100',
     description: 'Ideal for bulk buyers',
-    image: 'https://images.unsplash.com/photo-1582300857444-88fa45163d4c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80'
+    image: 'https://github.com/Kagwi/Nyuki-Haven/blob/main/Jar.PNG?raw=true&auto=format&fit=crop&w=800&q=80'
   }
 ];
 
@@ -75,7 +75,7 @@ export default function About() {
 
       <section className="py-16">
         <div className="container mx-auto max-w-7xl">
-          <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Our Products</h3>
+          <h3 className="text-3xl font-bold text-purple-900 mb-6 text-center">Our Products</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {products.map((product) => (
               <div 
@@ -114,7 +114,7 @@ export default function About() {
 
       <section className="py-16">
         <div className="container mx-auto max-w-7xl">
-          <h3 className="text-2xl font-bold text-purple-900 mb-6 text-center">Benefits of Honey</h3>
+          <h3 className="text-3xl font-bold text-purple-900 mb-6 text-center">Benefits of Honey</h3>
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3">
               <img
