@@ -59,6 +59,8 @@ export default function About() {
               <h3 className="text-3xl font-bold text-purple-900 mb-8 text-center">Our Vision</h3>
               <p>
                 We aim to be a global leader in sustainable honey production, pioneering eco-friendly methods and spreading awareness about the importance of bee conservation.
+              </p>
+              <p>
                 By choosing Nyuki Haven, you're supporting ethical beekeeping practices and helping to preserve these essential pollinators for future generations.
               </p>
             </div>
