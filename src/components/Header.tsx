@@ -16,7 +16,7 @@ export default function Header() {
             <img 
               src="https://github.com/Kagwi/Nyuki-Haven/blob/main/Nyuki_Haven_Logo.png?raw=true" 
               alt="Nyuki Haven Logo" 
-              className="h-8 w-8 mr-2 group-hover:rotate-12 transition-transform"
+              className="className="h-12 w-12 md:h-16 md:w-16 mr-2 group-hover:rotate-12 transition-transform"
             />
             <div>
               <h1 className="text-2xl font-bold group-hover:text-yellow-400 transition-colors">Nyuki Haven</h1>
